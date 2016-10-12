@@ -1,0 +1,11 @@
+
+body {
+  background-color: teal;
+}
+
+#quote-container {
+  border-radius: 5px;
+  padding: 30px;
+  background-color: white;
+  width: 700px;
+}
