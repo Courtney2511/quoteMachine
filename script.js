@@ -1,11 +1,16 @@
 $(document).ready(function(){
-  console.log("The Document is Ready");
+
   var quoteList = ""
   $.getJSON("http://quotes.stormconsultancy.co.uk/quotes.json", function(json){
     quoteList = json;
+
   });
   $("#get-quote").on("click", function(){
-    $("#quote").html(quoteList[0].quote);
-    console.log(quoteList);
+    var min = 1;
+    var max = quoteList.length;
+    var randomNumber = Math.floor(Math.random() * (max - min) + min);
+    console.log(randomNumber);
+    $("#quote").html("\" " + quoteList[randomNumber].quote + " \"");
+    $("#author").html("- " + quoteList[randomNumber].author);
   });
 });
