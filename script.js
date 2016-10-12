@@ -10,7 +10,7 @@ $(document).ready(function(){
     var max = quoteList.length;
     var randomNumber = Math.floor(Math.random() * (max - min) + min);
     console.log(randomNumber);
-    $("#quote").html("\" " + quoteList[randomNumber].quote + " \"");
+    $("#quote").html("\"" + quoteList[randomNumber].quote + "\"");
     $("#author").html("- " + quoteList[randomNumber].author);
   });
 });

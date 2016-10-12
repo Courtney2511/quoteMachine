@@ -1,11 +1,63 @@
 
 body {
   background-color: teal;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+  width: 100%;
 }
 
 #quote-container {
-  border-radius: 5px;
-  padding: 30px;
+  display:inline-block;
+  margin-top: 200px;
+  border-radius: 10px;
+  padding: 50px;
   background-color: white;
-  width: 700px;
+  width: 600px;
+  text-align: center;
+}
+
+#quote {
+  font-family: "Abhaya Libre";
+  text-align: center;
+  font-size: 26px;
+  color: teal;
+}
+
+#author {
+  text-align: right;
+  color: teal;
+}
+
+button {
+  background-color: teal;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+button:visited {
+  border: 0;
+}
+
+#signature {
+  margin: 5px;
+  font-family: "Source Sans Pro";
+}
+
+#credit {
+  font-size: 12px;
+  font-family: "Source Sans Pro";
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
 }
