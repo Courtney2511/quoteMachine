@@ -38,8 +38,16 @@ button {
   border-radius: 12px;
 }
 
-button:visited {
-  border: 0;
+button:focus {
+  outline: 0 !important;
+}
+
+button:active {
+  background-color: grey;
+}
+
+#twitter-share-button {
+  color: teal;
 }
 
 #signature {

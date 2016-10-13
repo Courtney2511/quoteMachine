@@ -5,12 +5,14 @@ $(document).ready(function(){
     quoteList = json;
 
   });
-  $("#get-quote").on("click", function(){
+  $("#get-quote").on("click", function() {
     var min = 1;
     var max = quoteList.length;
     var randomNumber = Math.floor(Math.random() * (max - min) + min);
-    console.log(randomNumber);
-    $("#quote").html("\"" + quoteList[randomNumber].quote + "\"");
-    $("#author").html("- " + quoteList[randomNumber].author);
+    var quote = quoteList[randomNumber];
+    $("#quote").html("\"" + quote.quote + "\"");
+    $("#author").html("- " + quote.author);
+    $("#twitter-share-button").attr("href", "https://twitter.com/intent/tweet?text=" + quote.quote);
   });
+
 });
